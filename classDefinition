@@ -1,0 +1,32 @@
+
+
+
+# classes in OOP
+
+
+class Car
+  def initialize (make, model)
+    @make = make
+    @model = model
+  end
+
+  def getmake
+    name = @make
+  end
+  def getmodel
+    model = @model
+  end
+  def setMake=(make)
+    @make = make
+  end
+  def setModel=(model)
+    @model = model
+  end
+  end
+
+make = Car.new("Rover","Range")
+print make.getmodel," ", make.getmake,"\n"
+  make.setMake = "Volkswagen"
+
+  newCar = make.getmake
+  puts newCar
